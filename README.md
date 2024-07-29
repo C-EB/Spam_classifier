@@ -22,8 +22,6 @@ The dataset contains 2500 ham emails and 500 spam emails.
 5. **Training a Classifier**
 6. **Evaluating the Classifier**
 
----
-
 ### Fetching and Loading Data
 
 ```python
@@ -51,7 +49,7 @@ def fetch_spam_data():
 
 ham_dir, spam_dir = fetch_spam_data()
 ```
-This block of code downloads the dataset from the SpamAssassin public corpus, extracts it, and organizes it into directories.
+Downloads the dataset from the SpamAssassin public corpus, extracts it, and organizes it into directories.
 
 **Output:**
 
@@ -70,7 +68,7 @@ len(ham_filenames)
 len(spam_filenames)
 ```
 
-This code block loads the email filenames into lists and checks the number of emails in each category.
+Loads the email filenames into lists and checks the number of emails in each category.
 
 **Output:**
 
@@ -93,7 +91,7 @@ ham_emails = [load_email(filepath) for filepath in ham_filenames]
 spam_emails = [load_email(filepath) for filepath in spam_filenames]
 ```
 
-This code block parses the emails using Python's `email` module.
+Parses the emails using Python's `email` module.
 
 ### Example of Ham and Spam Email
 
@@ -102,7 +100,7 @@ print(ham_emails[1].get_content().strip())
 print(spam_emails[6].get_content().strip())
 ```
 
-This code block prints an example of a ham email and a spam email to give a feel of what the data looks like.
+Prints an example of a ham email and a spam email to give a feel of what the data looks like.
 
 **Output:**
 
@@ -147,7 +145,7 @@ structures_counter(ham_emails).most_common()
 structures_counter(spam_emails).most_common()
 ```
 
-This code block explores the different structures of the emails.
+Explores the different structures of the emails.
 
 **Output:**
 
@@ -167,7 +165,7 @@ for header, value in spam_emails[0].items():
 spam_emails[0]["Subject"]
 ```
 
-This code block examines the headers of the emails and extracts the subject header.
+Examines the headers of the emails and extracts the subject header.
 
 **Output:**
 
@@ -190,7 +188,7 @@ y = np.array([0] * len(ham_emails) + [1] * len(spam_emails))
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 ```
 
-This code block splits the data into a training set and a test set.
+Splits the data into a training set and a test set.
 
 ### Preprocessing Emails
 
@@ -206,7 +204,7 @@ def html_to_plain_text(html):
     return unescape(text)
 ```
 
-This code block converts HTML content to plain text.
+Converts HTML content to plain text.
 
 **Example Output:**
 
@@ -263,7 +261,7 @@ for word in ("Computations", "Computation", "Computing", "Computed", "Compute", 
     print(word, "=>", stemmer.stem(word))
 ```
 
-This code block demonstrates stemming using the NLTK library.
+Demonstrates stemming using the NLTK library.
 
 **Output:**
 
@@ -403,7 +401,7 @@ score = cross_val_score(log_clf, X_train_transformed, y_train, cv=3)
 score.mean()
 ```
 
-This code block trains a Logistic Regression classifier using a preprocessing pipeline.
+Trains a Logistic Regression classifier using a preprocessing pipeline.
 
 **Output:**
 
@@ -427,7 +425,7 @@ print(f"Precision: {precision_score(y_test, y_pred):.2%}")
 print(f"Recall: {recall_score(y_test, y_pred):.2%}")
 ```
 
-This code block evaluates the classifier on the test set.
+Evaluates the classifier on the test set.
 
 **Output:**
 
