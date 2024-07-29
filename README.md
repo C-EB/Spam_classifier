@@ -435,7 +435,3 @@ This code block evaluates the classifier on the test set.
 Precision: 96.88%
 Recall: 97.89%
 ```
-
----
-
-This detailed `README.md` should help provide clear documentation and explanation for each step of your spam classifier project.
