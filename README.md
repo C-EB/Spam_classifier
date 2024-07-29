@@ -99,6 +99,7 @@ Parses the emails using Python's `email` module.
 print(ham_emails[1].get_content().strip())
 ```
 Prints an example of a ham email
+
 **Output:**
 ```
 Martin A posted:
