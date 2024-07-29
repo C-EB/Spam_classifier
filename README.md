@@ -97,26 +97,65 @@ Parses the emails using Python's `email` module.
 
 ```python
 print(ham_emails[1].get_content().strip())
+```
+Prints an example of a ham email
+**Output:**
+```
+Martin A posted:
+Tassos Papadopoulos, the Greek sculptor behind the plan, judged that the
+ limestone of Mount Kerdylio, 70 miles east of Salonika and not far from the
+ Mount Athos monastic community, was ideal for the patriotic sculpture. 
+ 
+ As well as Alexander's granite features, 240 ft high and 170 ft wide, a
+ museum, a restored amphitheatre and car park for admiring crowds are
+planned
+---------------------
+So is this mountain limestone or granite?
+If it's limestone, it'll weather pretty fast.
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+4 DVDs Free +s&p Join Now
+[dvd](http://us.click.yahoo.com/pt6YBB/NXiEAA/mG3HAA/7gSolB/TM)
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to [yahou](http://docs.yahoo.com/info/terms/)
+```
+```python
 print(spam_emails[6].get_content().strip())
 ```
 
-Prints an example of a ham email and a spam email to give a feel of what the data looks like.
+Prints an example of a spam email.
 
 **Output:**
 
 ```
-Ham Email Content:
-Martin A posted:
-Tassos Papadopoulos, the Greek sculptor behind the plan, judged that the
-limestone of Mount Kerdylio, 70 miles east of Salonika and not far from the
-Mount Athos monastic community, was ideal for the patriotic sculpture. 
-...
-
-Spam Email Content:
 Help wanted.  We are a 14 year old fortune 500 company, that is
 growing at a tremendous rate.  We are looking for individuals who
 want to work from home.
-...
+
+This is an opportunity to make an excellent income.  No experience
+is required.  We will train you.
+
+So if you are looking to be employed from home with a career that has
+vast opportunities, then go:
+
+[](http://www.basetel.com/wealthnow)
+
+We are looking for energetic and self motivated people.  If that is you
+than click on the link and fill out the form, and one of our
+employement specialist will contact you.
+
+To be removed from our link simple go to:
+
+[](http://www.basetel.com/remove.html)
+
+
+4139vOLW7-758DoDY1425FRhM1-764SMFc8513fCsLl40
 ```
 
 ### Exploring Email Structures
