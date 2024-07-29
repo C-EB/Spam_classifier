@@ -115,7 +115,7 @@ If it's limestone, it'll weather pretty fast.
 
 ------------------------ Yahoo! Groups Sponsor ---------------------~-->
 4 DVDs Free +s&p Join Now
-[dvd](http://us.click.yahoo.com/pt6YBB/NXiEAA/mG3HAA/7gSolB/TM)
+#[dvd](http://us.click.yahoo.com/pt6YBB/NXiEAA/mG3HAA/7gSolB/TM)
 ---------------------------------------------------------------------~->
 
 To unsubscribe from this group, send an email to:
@@ -123,7 +123,7 @@ forteana-unsubscribe@egroups.com
 
  
 
-Your use of Yahoo! Groups is subject to [yahou](http://docs.yahoo.com/info/terms/)
+Your use of Yahoo! Groups is subject to #[yahou](http://docs.yahoo.com/info/terms/)
 ```
 ```python
 print(spam_emails[6].get_content().strip())
